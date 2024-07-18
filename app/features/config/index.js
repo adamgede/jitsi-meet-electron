@@ -13,7 +13,7 @@ export default {
     /**
      * Application name.
      */
-    appName: 'Jitsi Meet',
+    appName: 'Dragon Meet',
 
     /**
     * The prefix for application protocol.

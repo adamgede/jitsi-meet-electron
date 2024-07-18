@@ -25,6 +25,7 @@
     "alwaysOnTopWindow": "Fenêtre Toujours au Dessus",
     "invalidServer": "URL invalide",
     "serverUrl": "URL du serveur",
-    "serverTimeout": "Délai de connexion au server (en secondes)"
+    "serverTimeout": "Délai de connexion au server (en secondes)",
+    "enableRemoteControl": "Attiva le funzioni dell’ID del telecomando"
   }
 }

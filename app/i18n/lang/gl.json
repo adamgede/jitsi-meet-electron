@@ -26,6 +26,7 @@
 		"invalidServer": "O URL do servidor é incorrecto",
 		"invalidServerTimeout": "O tempo de agarda do servidor é incorrecto",
 		"serverUrl": "URL do servidor",
-		"serverTimeout": "Tempo de agarda do servidor (en segundos)"
+		"serverTimeout": "Tempo de agarda do servidor (en segundos)",
+		"enableRemoteControl": "Enable remote control"
 	}
 }

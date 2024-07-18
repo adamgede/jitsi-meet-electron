@@ -28,6 +28,7 @@
 		"invalidServerTimeout": "Neispravna vrijednost za vremensko ograničenje poslužitelja",
 		"serverUrl": "URL-adresa poslužitelja",
 		"serverTimeout": "Vremensko ograničenje poslužitelja (u sekundama)",
-		"disableAGC": "Isključi kontrolu za automasko pojačanje zvuka"
+		"disableAGC": "Isključi kontrolu za automasko pojačanje zvuka",
+		"enableRemoteControl": "Enable remote control"
 	}
 }

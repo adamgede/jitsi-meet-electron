@@ -1,9 +1,9 @@
 {
   "name": "jitsi-meet-electron",
   "version": "2024.6.0",
-  "description": "Electron application for Jitsi Meet",
+  "description": "Electron application for Dragon Meet",
   "main": "./build/main.js",
-  "productName": "Jitsi Meet",
+  "productName": "Dragon Meet",
   "private": true,
   "scripts": {
     "start": "webpack --config ./webpack.main.js --mode development && concurrently \"npm:watch\" \"electron ./build/main.js\"",
@@ -19,7 +19,7 @@
   },
   "build": {
     "appId": "org.jitsi.jitsi-meet",
-    "productName": "Jitsi Meet",
+    "productName": "Dragon Meet",
     "generateUpdatesFilesForAllChannels": true,
     "afterSign": "./notarize.js",
     "npmRebuild": false,
@@ -49,8 +49,8 @@
       "asarUnpack": "**/*.node",
       "notarize": false,
       "extendInfo": {
-        "NSCameraUsageDescription": "Jitsi Meet requires access to your camera in order to make video-calls.",
-        "NSMicrophoneUsageDescription": "Jitsi Meet requires access to your microphone in order to make calls (audio/video).",
+        "NSCameraUsageDescription": "Dragon Meet requires access to your camera in order to make video-calls.",
+        "NSMicrophoneUsageDescription": "Dragon Meet requires access to your microphone in order to make calls (audio/video).",
         "LSMultipleInstancesProhibited": true
       }
     },
@@ -62,20 +62,20 @@
     "linux": {
       "artifactName": "jitsi-meet-${arch}.${ext}",
       "category": "VideoConference;AudioVideo;Audio;Video;Network",
-      "description": "Jitsi Meet Desktop App",
+      "description": "Dragon Meet Desktop App",
       "desktop": {
-        "Comment[de]": "Jitsi Meet Desktop App",
-        "Comment[es]": "Aplicación de escritorio Jitsi Meet",
-        "Comment[fr]": "Application de bureau Jitsi Meet",
+        "Comment[de]": "Dragon Meet Desktop App",
+        "Comment[es]": "Aplicación de escritorio Dragon Meet",
+        "Comment[fr]": "Application de bureau Dragon Meet",
         "Comment[hi]": "जितसि मीट डेस्कटॉप एैप",
-        "Comment[hr]": "Jitsi Meet desktop aplikacija",
-        "Comment[hu]": "Asztali Jitsi Meet-alkalmazás",
-        "Comment[it]": "Applicazione Jitsi Meet Desktop",
-        "Comment[pt]": "Aplicativo Jitsi Meet",
-        "Comment[ru]": "Приложение Jitsi Meet",
-        "Comment[sq]": "Aplikacion Jitsi Meet për Desktop",
-        "Comment[zh-CN]": "Jitsi Meet 桌面应用",
-        "Comment[zh-TW]": "Jitsi Meet 桌面應用程式"
+        "Comment[hr]": "Dragon Meet desktop aplikacija",
+        "Comment[hu]": "Asztali Dragon Meet-alkalmazás",
+        "Comment[it]": "Applicazione Dragon Meet Desktop",
+        "Comment[pt]": "Aplicativo Dragon Meet",
+        "Comment[ru]": "Приложение Dragon Meet",
+        "Comment[sq]": "Aplikacion Dragon Meet për Desktop",
+        "Comment[zh-CN]": "Dragon Meet 桌面应用",
+        "Comment[zh-TW]": "Dragon Meet 桌面應用程式"
       },
       "executableName": "jitsi-meet",
       "target": [

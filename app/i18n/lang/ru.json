@@ -25,6 +25,7 @@
 		"alwaysOnTopWindow": "Поверх всех окон",
 		"invalidServer": "Неверный URL-адрес сервера",
 		"serverUrl": "URL-адрес сервера",
-		"serverTimeout": "Тайм-аут сервера (в секундах)"
+		"serverTimeout": "Тайм-аут сервера (в секундах)",
+		"enableRemoteControl": "Enable remote control"
 	}
 }

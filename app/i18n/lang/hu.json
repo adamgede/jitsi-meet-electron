@@ -28,6 +28,7 @@
 		"invalidServerTimeout": "A kiszolgáló időkorlátja érvénytelen",
 		"serverUrl": "Kiszolgáló URL-címe",
 		"serverTimeout": "Kiszolgálói időkorlát (másodperc)",
-		"disableAGC": "Önműködő erősítésvezérlés letiltása"
+		"disableAGC": "Önműködő erősítésvezérlés letiltása",
+		"enableRemoteControl": "Enable remote control"
 	}
 }

@@ -28,6 +28,7 @@
     "invalidServerTimeout": "यह संख्या सर्वर टाइमआउट के लिए अमान्य है!",
     "serverUrl": "सर्वर URL",
     "serverTimeout": "सर्वर टाइमआउट (सकेंड में)",
-    "disableAGC": "स्वचालित नियंत्रण बंद करें"
+    "disableAGC": "स्वचालित नियंत्रण बंद करें",
+		"enableRemoteControl": "Enable remote control"
   }
 }

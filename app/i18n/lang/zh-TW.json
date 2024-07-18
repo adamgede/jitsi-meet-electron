@@ -28,6 +28,7 @@
 		"invalidServerTimeout": "伺服器逾時值無效",
 		"serverUrl": "伺服器網址",
 		"serverTimeout": "伺服器逾時（秒）",
-		"disableAGC": "停用自動增益控制"
+		"disableAGC": "停用自動增益控制",
+		"enableRemoteControl": "Enable remote control"
 	}
 }

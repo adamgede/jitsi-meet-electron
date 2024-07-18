@@ -28,6 +28,7 @@
 		"invalidServerTimeout": "服务器超时值无效",
 		"serverUrl": "服务器网址",
 		"serverTimeout": "服务器超时（秒）",
-		"disableAGC": "禁用自动增益控制"
+		"disableAGC": "禁用自动增益控制",
+		"enableRemoteControl": "Enable remote control"
 	}
 }

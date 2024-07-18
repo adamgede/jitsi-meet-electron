@@ -16,8 +16,6 @@ import { conferenceEnded, conferenceJoined } from '../actions';
 import JitsiMeetExternalAPI from '../external_api';
 import { LoadingIndicator, Wrapper } from '../styled';
 
-const ENABLE_REMOTE_CONTROL = false;
-
 type Props = {
 
     /**
@@ -49,6 +47,11 @@ type Props = {
      * Default Jitsi Server Timeout.
      */
     _serverTimeout: number;
+
+    /**
+     * Enable Remote Control
+     */
+    _enableRemoteControl: Boolean;
 };
 
 type State = {
@@ -217,7 +220,8 @@ class Conference extends Component<Props, State> {
             prejoinPageEnabled: true,
             prejoinConfig: {
                 enabled: true
-            }
+            },
+            enableRemoteControl: this.props._enableRemoteControl
         };
 
         Object.entries(hashParameters).forEach(([ key, value ]) => {
@@ -255,7 +259,7 @@ class Conference extends Component<Props, State> {
 
         // Setup Jitsi Meet Electron SDK on this renderer.
         window.jitsiNodeAPI.setupRenderer(this._api, {
-            enableRemoteControl: ENABLE_REMOTE_CONTROL,
+            enableRemoteControl: this.props._enableRemoteControl,
             enableAlwaysOnTopWindow: this.props._alwaysOnTopWindowEnabled
         });
     }
@@ -344,7 +348,8 @@ function _mapStateToProps(state: Object) {
         _alwaysOnTopWindowEnabled: getSetting(state, 'alwaysOnTopWindowEnabled', true),
         _disableAGC: state.settings.disableAGC,
         _serverURL: state.settings.serverURL,
-        _serverTimeout: state.settings.serverTimeout
+        _serverTimeout: state.settings.serverTimeout,
+        _enableRemoteControl: state.settings.enableRemoteControl
     };
 }
 

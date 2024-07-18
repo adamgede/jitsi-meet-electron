@@ -28,6 +28,7 @@
 		"invalidServerTimeout": "Vlerë e pavlefshme për Mbarim Kohe Shërbyesi",
 		"serverUrl": "URL Shërbyesi",
 		"serverTimeout": "Mbarim Kohe Shërbyesi (në sekonda)",
-		"disableAGC": "Çaktivizoni kontroll të automatizuar gain-i"
+		"disableAGC": "Çaktivizoni kontroll të automatizuar gain-i",
+		"enableRemoteControl": "Enable remote control"
 	}
 }

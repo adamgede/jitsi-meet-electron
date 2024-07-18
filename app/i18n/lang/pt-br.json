@@ -26,6 +26,7 @@
     "invalidServer": "URL do Servidor Inválida",
     "invalidServerTimeout": "Valor inválido para tempo limite do servidor",
     "serverUrl": "URL do servidor",
-    "serverTimeout": "Tempo Limite do Servidor (em segundos)"
+    "serverTimeout": "Tempo Limite do Servidor (em segundos)",
+		"enableRemoteControl": "Enable remote control"
   }
 }

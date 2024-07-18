@@ -26,6 +26,7 @@
 		"invalidServer": "Ongeldige server-URL",
 		"invalidServerTimeout": "Ongeldige waarde voor server-tijdslimiet",
 		"serverUrl": "Server-URL",
-		"serverTimeout": "Server-tijdslimiet (in seconden)"
+		"serverTimeout": "Server-tijdslimiet (in seconden)",
+		"enableRemoteControl": "Enable remote control"
 	}
 }

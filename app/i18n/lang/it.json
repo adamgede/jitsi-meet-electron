@@ -25,6 +25,7 @@
 		"alwaysOnTopWindow": "Finestra sempre in primo piano",
 		"invalidServer": "URL del server errato",
 		"serverUrl": "URL Server",
-        "serverTimeout": "Timeout del server (in secondi)"
+        "serverTimeout": "Timeout del server (in secondi)",
+		"enableRemoteControl": "Enable remote control"
 	}
 }
