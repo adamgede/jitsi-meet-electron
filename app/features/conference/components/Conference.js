@@ -49,7 +49,7 @@ type Props = {
     _serverTimeout: number;
 
     /**
-     * Enable Remote Control
+     * Enable Remote Control.
      */
     _enableRemoteControl: Boolean;
 };

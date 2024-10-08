@@ -61,7 +61,7 @@ export default (state: State = DEFAULT_STATE, action: Object) => {
         return {
             ...state,
             enableRemoteControl: action.enableRemoteControl
-        }
+        };
 
     default:
         return state;
