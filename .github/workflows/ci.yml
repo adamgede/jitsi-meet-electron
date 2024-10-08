@@ -30,10 +30,10 @@ jobs:
       with:
         name: linux-binaries
         path: |
-          dist/jitsi-meet-amd64.deb
-          dist/jitsi-meet-x86_64.AppImage
-          dist/jitsi-meet-arm64.deb
-          dist/jitsi-meet-arm64.AppImage
+          dist/dragon-meet-amd64.deb
+          dist/dragon-meet-x86_64.AppImage
+          dist/dragon-meet-arm64.deb
+          dist/dragon-meet-arm64.AppImage
           dist/latest-linux.yml
           dist/latest-linux-arm64.yml
   build-mac:
@@ -65,8 +65,8 @@ jobs:
       with:
         name: mac-binaries
         path: |
-          dist/jitsi-meet.dmg
-          dist/jitsi-meet.zip
+          dist/dragon-meet.dmg
+          dist/dragon-meet.zip
           dist/latest-mac.yml
   build-windows:
     name: Windows
@@ -86,5 +86,5 @@ jobs:
       with:
         name: windows-binaries
         path: |
-          dist/jitsi-meet.exe
+          dist/dragon-meet.exe
           dist/latest.yml
