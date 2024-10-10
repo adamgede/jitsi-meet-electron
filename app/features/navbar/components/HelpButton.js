@@ -34,6 +34,7 @@ class HelpButton extends Component<*, State> {
             droplistOpen: false
         };
 
+        this._onCheckUpdatesClick = this._onCheckUpdatesClick.bind(this); // Listener for Check Updates click.
         this._onAboutClick = openExternalLink.bind(undefined, config.aboutURL);
         this._onSourceClick = openExternalLink.bind(undefined, config.sourceURL);
         this._onIconClick = this._onIconClick.bind(this);
@@ -46,11 +47,22 @@ class HelpButton extends Component<*, State> {
             = openExternalLink.bind(undefined, config.feedbackURL);
     }
 
+    _onCheckUpdatesClick: (*) => void; // Listener for Check Updates click.
+
     _onAboutClick: (*) => void;
 
     _onSourceClick: (*) => void;
 
     _onIconClick: (*) => void;
+
+    /**
+     * Checks for updates.
+     *
+     * @returns {void}
+     */
+    _onCheckUpdatesClick() {
+        window.jitsiNodeAPI.ipc.send('check-updates-clicked'); // Add new inter-process connection event for the Check Updates click.
+    }
 
     /**
      * Toggles the droplist.
@@ -98,6 +110,9 @@ class HelpButton extends Component<*, State> {
                 position = 'right bottom'
                 trigger = { <HelpIcon /> }>
                 <Group heading = { t('help') } >
+                    <Item onActivate = { this._onCheckUpdatesClick }>
+                        { t('checkUpdatesLink') }
+                    </Item>
                     <Item onActivate = { this._onTermsClick }>
                         { t('termsLink') }
                     </Item>

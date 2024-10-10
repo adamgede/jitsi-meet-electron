@@ -4,6 +4,7 @@
 	"help": "Aiuto",
 	"termsLink": "Condizioni d'uso",
 	"privacyLink": "Informazioni sulla privacy",
+	"checkUpdatesLink": "Controlla gli aggiornamenti",
 	"sendFeedbackLink": "Inviaci Feedback",
 	"aboutLink": "FAQ",
 	"sourceLink": "Codice sorgente",
@@ -26,6 +27,6 @@
 		"invalidServer": "URL del server errato",
 		"serverUrl": "URL Server",
         "serverTimeout": "Timeout del server (in secondi)",
-		"enableRemoteControl": "Enable remote control"
+		"enableRemoteControl": "Abilita il controllo remoto"
 	}
 }

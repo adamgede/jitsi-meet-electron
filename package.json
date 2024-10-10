@@ -1,7 +1,7 @@
 {
-  "name": "jitsi-meet-electron",
-  "version": "2024.10.0",
-  "description": "Electron application for Dragon Meet",
+  "name": "dragon-meet",
+  "version": "2024.10.1",
+  "description": "Dragon Meet",
   "main": "./build/main.js",
   "productName": "Dragon Meet",
   "private": true,
@@ -118,6 +118,11 @@
           "target": "nsis"
         }
       ]
+    },
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false,
+      "perMachine": true
     },
     "directories": {
       "buildResources": "resources"

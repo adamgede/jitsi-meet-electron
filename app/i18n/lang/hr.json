@@ -5,6 +5,7 @@
 	"termsLink": "Uvjeti",
 	"privacyLink": "Privatnost",
 	"recentListLabel": "ili se ponovo pridruži jednoj od tvojih nedavnih konferencijskih soba",
+	"checkUpdatesLink": "Provjerite ima li ažuriranja",
 	"sendFeedbackLink": "Pošalji povratnu informaciju",
 	"aboutLink": "Informacije o",
 	"sourceLink": "Izvroni kod",
@@ -29,6 +30,6 @@
 		"serverUrl": "URL-adresa poslužitelja",
 		"serverTimeout": "Vremensko ograničenje poslužitelja (u sekundama)",
 		"disableAGC": "Isključi kontrolu za automasko pojačanje zvuka",
-		"enableRemoteControl": "Enable remote control"
+		"enableRemoteControl": "Omogući daljinsko upravljanje"
 	}
 }

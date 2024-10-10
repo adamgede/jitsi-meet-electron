@@ -5,6 +5,7 @@
   "termsLink": "शरतें",
   "privacyLink": "गोपनीयता",
   "recentListLabel": "या अपने हाल के सम्मेलनों में से किसी एक में पुनः शामिल हों।",
+	"checkUpdatesLink": "अद्यतन के लिए जाँच",
   "sendFeedbackLink": "प्रतिक्रिया भेजें",
   "aboutLink": "हमारे बारे में",
   "sourceLink": "सोर्स कोड",
@@ -29,6 +30,6 @@
     "serverUrl": "सर्वर URL",
     "serverTimeout": "सर्वर टाइमआउट (सकेंड में)",
     "disableAGC": "स्वचालित नियंत्रण बंद करें",
-		"enableRemoteControl": "Enable remote control"
+		"enableRemoteControl": "रिमोट कंट्रोल सक्षम करें"
   }
 }

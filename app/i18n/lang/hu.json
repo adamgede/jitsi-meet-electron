@@ -5,6 +5,7 @@
 	"termsLink": "Feltételek",
 	"privacyLink": "Adatvédelem",
 	"recentListLabel": "vagy csatlakozzon újra az egyik legutóbbi konferenciateremhez",
+	"checkUpdatesLink": "Ellenőrizze a frissítéseket",
 	"sendFeedbackLink": "Visszajelzés",
 	"aboutLink": "Névjegy",
 	"sourceLink": "Forráskód",
@@ -29,6 +30,6 @@
 		"serverUrl": "Kiszolgáló URL-címe",
 		"serverTimeout": "Kiszolgálói időkorlát (másodperc)",
 		"disableAGC": "Önműködő erősítésvezérlés letiltása",
-		"enableRemoteControl": "Enable remote control"
+		"enableRemoteControl": "Távirányító engedélyezése"
 	}
 }

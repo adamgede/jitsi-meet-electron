@@ -5,6 +5,7 @@
 	"termsLink": "條款",
 	"privacyLink": "隱私權",
 	"recentListLabel": "或重新加入最近參加過的會議",
+	"checkUpdatesLink": "檢查更新",
 	"sendFeedbackLink": "傳送意見反應",
 	"aboutLink": "關於",
 	"sourceLink": "原始碼",
@@ -29,6 +30,6 @@
 		"serverUrl": "伺服器網址",
 		"serverTimeout": "伺服器逾時（秒）",
 		"disableAGC": "停用自動增益控制",
-		"enableRemoteControl": "Enable remote control"
+		"enableRemoteControl": "啟用遠端控制"
 	}
 }

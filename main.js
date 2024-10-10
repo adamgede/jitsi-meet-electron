@@ -9,7 +9,6 @@ const {
 const contextMenu = require('electron-context-menu');
 const debug = require('electron-debug');
 const isDev = require('electron-is-dev');
-const { autoUpdater } = require('electron-updater');
 const windowStateKeeper = require('electron-window-state');
 const {
     initPopupsConfigurationMain,
@@ -25,6 +24,7 @@ const URL = require('url');
 const config = require('./app/features/config');
 const { openExternalLink } = require('./app/features/utils/openExternalLink');
 const pkgJson = require('./package.json');
+const { checkForUpdates } = require('./app/features/navbar/components/updater'); // Add new Updater feature for manual updates (deprecating auto-updates).
 
 const showDevTools = Boolean(process.env.SHOW_DEV_TOOLS) || (process.argv.indexOf('--show-dev-tools') > -1);
 
@@ -44,9 +44,6 @@ app.commandLine.appendSwitch('force-fieldtrials', 'WebRTC-Audio-Red-For-Opus/Ena
 if (!app.commandLine.hasSwitch('enable-features')) {
     app.commandLine.appendSwitch('enable-features', 'WebRTCPipeWireCapturer');
 }
-
-autoUpdater.logger = require('electron-log');
-autoUpdater.logger.transports.file.level = 'info';
 
 // Enable context menu so things like copy and paste work in input fields.
 contextMenu({
@@ -168,11 +165,6 @@ function setApplicationMenu() {
 function createJitsiMeetWindow() {
     // Application menu.
     setApplicationMenu();
-
-    // Check for Updates.
-    if (!process.mas) {
-        autoUpdater.checkForUpdatesAndNotify();
-    }
 
     // Load the previous window state with fallback to defaults.
     const windowState = windowStateKeeper({
@@ -484,4 +476,11 @@ ipcMain.on('renderer-ready', () => {
  */
 ipcMain.on('jitsi-open-url', (event, someUrl) => {
     openExternalLink(someUrl);
+});
+
+ipcMain.on('check-updates-clicked', (event) => {
+    const menu = Menu.getApplicationMenu(); // Get the Application Menu.
+    let menuItem = null; // Placeholder for menu item (if one exists).
+    if (menu && menu.items && menu.items.length > 0) menuItem = menu.items[0]; // If defined, use first menu item.
+    checkForUpdates(menuItem); // Check for App Updates.
 });

@@ -5,6 +5,7 @@
 	"termsLink": "Kushte",
 	"privacyLink": "Privatësi",
 	"recentListLabel": "ose rihyni në një nga dhomat tuaja përdorur së fundi",
+	"checkUpdatesLink": "Kontrolloni për përditësime",
 	"sendFeedbackLink": "Dërgoni Përshtypje",
 	"aboutLink": "Mbi",
 	"sourceLink": "Kod Burim",
@@ -29,6 +30,6 @@
 		"serverUrl": "URL Shërbyesi",
 		"serverTimeout": "Mbarim Kohe Shërbyesi (në sekonda)",
 		"disableAGC": "Çaktivizoni kontroll të automatizuar gain-i",
-		"enableRemoteControl": "Enable remote control"
+		"enableRemoteControl": "Aktivizo telekomandën"
 	}
 }

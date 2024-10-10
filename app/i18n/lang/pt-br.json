@@ -4,6 +4,7 @@
   "help": "Ajuda",
   "termsLink": "Termos",
   "privacyLink": "Privacidade",
+	"checkUpdatesLink": "Verifique se há atualizações",
   "sendFeedbackLink": "Enviar Comentário",
   "aboutLink": "Sobre",
   "sourceLink": "Código Fonte",
@@ -27,6 +28,6 @@
     "invalidServerTimeout": "Valor inválido para tempo limite do servidor",
     "serverUrl": "URL do servidor",
     "serverTimeout": "Tempo Limite do Servidor (em segundos)",
-		"enableRemoteControl": "Enable remote control"
+		"enableRemoteControl": "Habilitar controle remoto"
   }
 }

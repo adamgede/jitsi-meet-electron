@@ -4,6 +4,7 @@
 	"help": "Help",
 	"termsLink": "Voorwaarden",
 	"privacyLink": "Privacy",
+	"checkUpdatesLink": "Controleer op updates",
 	"sendFeedbackLink": "Stuur feedback",
 	"aboutLink": "Over",
 	"sourceLink": "Broncode",
@@ -27,6 +28,6 @@
 		"invalidServerTimeout": "Ongeldige waarde voor server-tijdslimiet",
 		"serverUrl": "Server-URL",
 		"serverTimeout": "Server-tijdslimiet (in seconden)",
-		"enableRemoteControl": "Enable remote control"
+		"enableRemoteControl": "Schakel afstandsbediening in"
 	}
 }

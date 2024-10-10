@@ -4,6 +4,7 @@
 	"help": "Axuda",
 	"termsLink": "Termos",
 	"privacyLink": "Privacidade",
+	"checkUpdatesLink": "Consulta as actualizacións",
 	"sendFeedbackLink": "Enviar unha opinión",
 	"aboutLink": "Sobre",
 	"sourceLink": "Código fonte",
@@ -27,6 +28,6 @@
 		"invalidServerTimeout": "O tempo de agarda do servidor é incorrecto",
 		"serverUrl": "URL do servidor",
 		"serverTimeout": "Tempo de agarda do servidor (en segundos)",
-		"enableRemoteControl": "Enable remote control"
+		"enableRemoteControl": "Activa o control remoto"
 	}
 }

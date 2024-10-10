@@ -5,6 +5,7 @@
 	"termsLink": "条款",
 	"privacyLink": "隐私",
 	"recentListLabel": "或重新加入最近的会议",
+	"checkUpdatesLink": "检查更新",
 	"sendFeedbackLink": "发送反馈",
 	"aboutLink": "关于",
 	"sourceLink": "源代码",
@@ -29,6 +30,6 @@
 		"serverUrl": "服务器网址",
 		"serverTimeout": "服务器超时（秒）",
 		"disableAGC": "禁用自动增益控制",
-		"enableRemoteControl": "Enable remote control"
+		"enableRemoteControl": "启用远程控制"
 	}
 }

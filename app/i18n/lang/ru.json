@@ -4,6 +4,7 @@
 	"help": "Помощь",
 	"termsLink": "Условия",
 	"privacyLink": "Конфиденциальность",
+	"checkUpdatesLink": "Проверьте наличие обновлений",
 	"sendFeedbackLink": "Отправить отзыв",
 	"aboutLink": "О приложении",
 	"sourceLink": "Исходный код",
@@ -26,6 +27,6 @@
 		"invalidServer": "Неверный URL-адрес сервера",
 		"serverUrl": "URL-адрес сервера",
 		"serverTimeout": "Тайм-аут сервера (в секундах)",
-		"enableRemoteControl": "Enable remote control"
+		"enableRemoteControl": "Включить удаленное управление"
 	}
 }
