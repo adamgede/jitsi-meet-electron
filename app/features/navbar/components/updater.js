@@ -54,7 +54,7 @@ autoUpdater.on('update-downloaded', () => {
 
 /**
  * Send a check to the updater for any new updates.
- * 
+ *
  * @param {*} menuItem - Menu Item to disable (if specified).
  * @returns {void}
  */
