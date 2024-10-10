@@ -24,6 +24,7 @@ const URL = require('url');
 const config = require('./app/features/config');
 const { openExternalLink } = require('./app/features/utils/openExternalLink');
 const pkgJson = require('./package.json');
+
 // Add new Updater feature for manual updates (deprecating auto-updates).
 const { checkForUpdates } = require('./app/features/navbar/components/updater');
 
@@ -485,7 +486,7 @@ ipcMain.on('jitsi-open-url', (event, someUrl) => {
 ipcMain.on('check-updates-clicked', () => {
     const menu = Menu.getApplicationMenu(); // Get the Application Menu.
     let menuItem = null; // Placeholder for menu item (if one exists).
-    
+
     if (menu && menu.items && menu.items.length > 0) {
         menuItem = menu.items[0]; // If defined, use first menu item.
     }

@@ -6,7 +6,7 @@ const { RemoteControl,
     setupPowerMonitorRender
 } = require('@jitsi/electron-sdk');
 
- // Whitelist for ipc events notification.
+// Whitelist for ipc events notification.
 const whitelistedIpcChannels = [ 'protocol-data-msg', 'renderer-ready', 'check-updates-clicked' ];
 
 /**
