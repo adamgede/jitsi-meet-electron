@@ -61,7 +61,7 @@ class HelpButton extends Component<*, State> {
      * @returns {void}
      */
     _onCheckUpdatesClick() {
-        window.jitsiNodeAPI.ipc.send('check-updates-clicked'); // Add new inter-process connection event for the Check Updates click.
+        window.jitsiNodeAPI.ipc.send('check-updates-clicked'); // Add new inter-process event for Check Updates.
     }
 
     /**

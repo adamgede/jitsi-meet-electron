@@ -1,10 +1,8 @@
 /**
- * updater.js
- *
- * Manual Updating process.
+ * Updater.js - Manual Updating process.
  */
-const { dialog } = require('electron')
-const { autoUpdater } = require('electron-updater')
+const { dialog } = require('electron');
+const { autoUpdater } = require('electron-updater');
 const log = require('electron-log');
 
 let updater;
@@ -14,7 +12,7 @@ autoUpdater.logger.transports.file.level = 'info';
 
 autoUpdater.on('error', (error) => {
   dialog.showErrorBox('Error: ', error == null ? "unknown" : (error.stack || error).toString());
-})
+});
 
 autoUpdater.on('update-available', () => {
   dialog.showMessageBox({
@@ -32,7 +30,7 @@ autoUpdater.on('update-available', () => {
       }
     }
   });
-})
+});
 
 autoUpdater.on('update-not-available', () => {
   dialog.showMessageBox({
@@ -43,7 +41,7 @@ autoUpdater.on('update-not-available', () => {
     updater.enabled = true;
     updater = null;
   }
-})
+});
 
 autoUpdater.on('update-downloaded', () => {
   dialog.showMessageBox({
@@ -52,7 +50,7 @@ autoUpdater.on('update-downloaded', () => {
   }).then(() => {
     setImmediate(() => autoUpdater.quitAndInstall());
   });
-})
+});
 
 // export this to MenuItem click callback
 function checkForUpdates (menuItem, focusedWindow, event) {

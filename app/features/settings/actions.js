@@ -77,7 +77,7 @@ export function setWindowAlwaysOnTop(alwaysOnTopWindowEnabled: boolean) {
 /**
  * Set Enable Remote Control.
  *
- * @param {boolean} enableRemoteControl - Whether to enable remote control
+ * @param {boolean} enableRemoteControl - Whether to enable remote control.
  * @returns {{
  *     type: SET_ENABLE_REMOTE_CONTROL,
  *     enableRemoteControl: boolean
