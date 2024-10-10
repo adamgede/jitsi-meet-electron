@@ -3,6 +3,7 @@
  */
 const { dialog } = require('electron');
 const { autoUpdater } = require('electron-updater');
+const { setImmediate } = require('timers');
 const log = require('electron-log');
 
 let updater;
@@ -12,7 +13,7 @@ autoUpdater.logger = log;
 autoUpdater.logger.transports.file.level = 'info';
 
 autoUpdater.on('error', error => {
-    dialog.showErrorBox('Error: ', error == null ? "unknown" : (error.stack || error).toString());
+    dialog.showErrorBox('Error: ', error === null ? 'unknown' : (error.stack || error).toString());
 });
 
 autoUpdater.on('update-available', () => {
@@ -20,15 +21,13 @@ autoUpdater.on('update-available', () => {
         type: 'info',
         title: 'Found Updates',
         message: 'Found updates, do you want update now?',
-        buttons: ['Sure', 'No']
-    }).then((buttonIndex) => {
+        buttons: [ 'Sure', 'No' ]
+    }).then(buttonIndex => {
         if (buttonIndex.response === 0) {
             autoUpdater.downloadUpdate();
-        } else {
-            if (updater) {
-                updater.enabled = true;
-                updater = null;
-            }
+        } else if (updater) {
+            updater.enabled = true;
+            updater = null;
         }
     });
 });
@@ -55,7 +54,9 @@ autoUpdater.on('update-downloaded', () => {
 
 /**
  * Send a check to the updater for any new updates.
- * @param {*} menuItem Menu Item to disable (if specified).
+ * 
+ * @param {*} menuItem - Menu Item to disable (if specified).
+ * @returns {void}
  */
 function checkForUpdates(menuItem) {
     if (menuItem) {
