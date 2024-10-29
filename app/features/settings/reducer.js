@@ -19,7 +19,7 @@ type State = {
 const DEFAULT_STATE = {
     alwaysOnTopWindowEnabled: false,
     disableAGC: true,
-    serverURL: "https://meet.dragonplayground.com",
+    serverURL: 'https://meet.dragonplayground.com',
     serverTimeout: undefined,
     enableRemoteControl: true
 };
