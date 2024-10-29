@@ -1,6 +1,6 @@
 {
   "name": "dragon-meet",
-  "version": "2024.10.1",
+  "version": "2024.10.2",
   "description": "Dragon Meet",
   "main": "./build/main.js",
   "productName": "Dragon Meet",

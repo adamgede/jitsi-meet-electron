@@ -17,11 +17,11 @@ type State = {
 };
 
 const DEFAULT_STATE = {
-    alwaysOnTopWindowEnabled: true,
-    disableAGC: false,
-    serverURL: undefined,
+    alwaysOnTopWindowEnabled: false,
+    disableAGC: true,
+    serverURL: "https://meet.dragonplayground.com",
     serverTimeout: undefined,
-    enableRemoteControl: false
+    enableRemoteControl: true
 };
 
 /**
